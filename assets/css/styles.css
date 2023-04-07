@@ -495,21 +495,18 @@ video {
 .top-\[20px\]{
   top: 20px;
 }
-.col-end-2{
-  grid-column-end: 2;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-.mb-\[68px\]{
-  margin-bottom: 68px;
 }
 .mt-6{
   margin-top: 1.5rem;
 }
 .mb-5{
   margin-bottom: 1.25rem;
+}
+.mb-\[68px\]{
+  margin-bottom: 68px;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -526,9 +523,6 @@ video {
 .mt-5{
   margin-top: 1.25rem;
 }
-.mb-\[\]{
-  margin-bottom: ;
-}
 .block{
   display: block;
 }
@@ -537,9 +531,6 @@ video {
 }
 .flex{
   display: flex;
-}
-.grid{
-  display: grid;
 }
 .hidden{
   display: none;
@@ -562,14 +553,8 @@ video {
 .w-screen{
   width: 100vw;
 }
-.w-auto{
-  width: auto;
-}
 .max-w-\[480px\]{
   max-width: 480px;
-}
-.flex-row{
-  flex-direction: row;
 }
 .flex-col{
   flex-direction: column;
@@ -603,10 +588,6 @@ video {
 .bg-soft-red{
   --tw-bg-opacity: 1;
   background-color: hsl(5 85% 63% / var(--tw-bg-opacity));
-}
-.bg-very-dark-blue{
-  --tw-bg-opacity: 1;
-  background-color: hsl(240 100% 5% / var(--tw-bg-opacity));
 }
 .bg-very-dark-blue\/50{
   background-color: hsl(240 100% 5% / 0.5);
@@ -645,9 +626,6 @@ video {
 .pb-8{
   padding-bottom: 2rem;
 }
-.pt-24{
-  padding-top: 6rem;
-}
 .text-center{
   text-align: center;
 }
@@ -660,10 +638,6 @@ video {
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 .text-\[2\.6rem\]{
   font-size: 2.6rem;
@@ -691,6 +665,9 @@ video {
 }
 .uppercase{
   text-transform: uppercase;
+}
+.leading-none{
+  line-height: 1;
 }
 .tracking-\[4px\]{
   letter-spacing: 4px;
@@ -731,12 +708,19 @@ body::before {
   position: absolute;
   opacity: 0.5;
   z-index: -1;
-  background-image: url('../../design/desktop-design.jpg');
+  background-image: url('../../design/mobile-design.jpg');
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 1024px !important;
+  height: 1872px !important;
   content: '';
+}
+
+@media (min-width: 1280px) {
+  body::before {
+    background-image: url('../../design/desktop-design.jpg');
+    height: 1024px !important;
+  }
 }
 
 .hover\:text-soft-red:hover{
@@ -772,286 +756,143 @@ body::before {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1280px){
 
-  .lg\:relative{
+  .xl\:relative{
     position: relative;
   }
 
-  .lg\:col-span-2{
+  .xl\:col-span-2{
     grid-column: span 2 / span 2;
   }
 
-  .lg\:col-start-1{
+  .xl\:col-start-1{
     grid-column-start: 1;
   }
 
-  .lg\:col-start-2{
+  .xl\:col-start-2{
     grid-column-start: 2;
   }
 
-  .lg\:col-start-3{
+  .xl\:col-start-3{
     grid-column-start: 3;
   }
 
-  .lg\:col-end-2{
+  .xl\:col-end-2{
     grid-column-end: 2;
   }
 
-  .lg\:col-end-3{
+  .xl\:col-end-3{
     grid-column-end: 3;
   }
 
-  .lg\:row-span-2{
+  .xl\:row-span-2{
     grid-row: span 2 / span 2;
   }
 
-  .lg\:row-start-1{
+  .xl\:row-start-1{
     grid-row-start: 1;
   }
 
-  .lg\:m-0{
+  .xl\:m-0{
     margin: 0px;
   }
 
-  .lg\:ml-auto{
-    margin-left: auto;
-  }
-
-  .lg\:mb-20{
-    margin-bottom: 5rem;
-  }
-
-  .lg\:mb-10{
-    margin-bottom: 2.5rem;
-  }
-
-  .lg\:mb-5{
-    margin-bottom: 1.25rem;
-  }
-
-  .lg\:mb-8{
-    margin-bottom: 2rem;
-  }
-
-  .lg\:mb-7{
+  .xl\:mb-7{
     margin-bottom: 1.75rem;
   }
 
-  .lg\:mb-0{
-    margin-bottom: 0px;
+  .xl\:ml-auto{
+    margin-left: auto;
   }
 
-  .lg\:mb-\[68px\]{
+  .xl\:mb-\[68px\]{
     margin-bottom: 68px;
   }
 
-  .lg\:flex{
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .xl\:mb-10{
+    margin-bottom: 2.5rem;
+  }
+
+  .xl\:flex{
     display: flex;
   }
 
-  .lg\:grid{
+  .xl\:grid{
     display: grid;
   }
 
-  .lg\:hidden{
+  .xl\:hidden{
     display: none;
   }
 
-  .lg\:h-8{
-    height: 2rem;
-  }
-
-  .lg\:h-9{
-    height: 2.25rem;
-  }
-
-  .lg\:h-10{
+  .xl\:h-10{
     height: 2.5rem;
   }
 
-  .lg\:w-auto{
+  .xl\:w-auto{
     width: auto;
   }
 
-  .lg\:max-w-none{
-    max-width: none;
-  }
-
-  .lg\:max-w-\[none\]{
-    max-width: none;
-  }
-
-  .lg\:max-w-\[1200px\]{
-    max-width: 1200px;
-  }
-
-  .lg\:max-w-\[1140px\]{
+  .xl\:max-w-\[1140px\]{
     max-width: 1140px;
   }
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3{
+  .xl\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:flex-row{
+  .xl\:flex-row{
     flex-direction: row;
   }
 
-  .lg\:gap-8{
-    gap: 2rem;
-  }
-
-  .lg\:gap-10{
+  .xl\:gap-10{
     gap: 2.5rem;
   }
 
-  .lg\:gap-12{
-    gap: 3rem;
-  }
-
-  .lg\:gap-11{
-    gap: 2.75rem;
-  }
-
-  .lg\:gap-9{
-    gap: 2.25rem;
-  }
-
-  .lg\:gap-2{
-    gap: 0.5rem;
-  }
-
-  .lg\:gap-4{
-    gap: 1rem;
-  }
-
-  .lg\:gap-5{
-    gap: 1.25rem;
-  }
-
-  .lg\:gap-6{
-    gap: 1.5rem;
-  }
-
-  .lg\:gap-7{
+  .xl\:gap-7{
     gap: 1.75rem;
   }
 
-  .lg\:gap-x-7{
-    -moz-column-gap: 1.75rem;
-         column-gap: 1.75rem;
-  }
-
-  .lg\:bg-transparent{
+  .xl\:bg-transparent{
     background-color: transparent;
   }
 
-  .lg\:bg-none{
-    background-image: none;
-  }
-
-  .lg\:p-0{
+  .xl\:p-0{
     padding: 0px;
   }
 
-  .lg\:p-7{
-    padding: 1.75rem;
-  }
-
-  .lg\:p-6{
+  .xl\:p-6{
     padding: 1.5rem;
   }
 
-  .lg\:py-7{
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
-  .lg\:py-10{
+  .xl\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
 
-  .lg\:pt-24{
-    padding-top: 6rem;
-  }
-
-  .lg\:pt-20{
-    padding-top: 5rem;
-  }
-
-  .lg\:pt-2{
-    padding-top: 0.5rem;
-  }
-
-  .lg\:pt-\[20\]{
-    padding-top: 20;
-  }
-
-  .lg\:pt-\[88px\]{
+  .xl\:pt-\[88px\]{
     padding-top: 88px;
   }
 
-  .lg\:text-base{
-    font-size: 15px;
-    line-height: 1.5rem;
-    letter-spacing: 0.02em;
-    font-weight: 400;
-  }
-
-  .lg\:text-\[16px\]{
+  .xl\:text-\[16px\]{
     font-size: 16px;
   }
 
-  .lg\:text-\[2\.25rem\]{
-    font-size: 2.25rem;
-  }
-
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .lg\:text-\[40px\]{
-    font-size: 40px;
-  }
-
-  .lg\:text-\[2\.5rem\]{
-    font-size: 2.5rem;
-  }
-
-  .lg\:text-6xl{
+  .xl\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
   }
 
-  .lg\:text-\[3\.5rem\]{
+  .xl\:text-\[3\.5rem\]{
     font-size: 3.5rem;
   }
 
-  .lg\:text-\[2\.\]{
-    color: 2.;
-  }
-
-  .lg\:text-\[\]{
-    color: ;
-  }
-
-  .lg\:text-\[6xl\]{
-    color: 6xl;
-  }
-
-  .lg\:text-\[e\.5rem\]{
-    color: e.5rem;
+  .xl\:text-\[2\.5rem\]{
+    font-size: 2.5rem;
   }
 }
