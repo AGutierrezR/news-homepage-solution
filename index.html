@@ -17,15 +17,15 @@
   </head>
   <body class="bg-off-white text-base">
     <header
-      class="mx-auto flex max-w-[480px] items-center justify-between px-4 py-7"
+      class="mx-auto flex max-w-[480px] items-center justify-between px-4 py-7 lg:mb-7 lg:max-w-[1140px] lg:pt-[88px]"
     >
-      <img class="h-7" src="assets/images/logo.svg" alt="logo" />
-      <img src="/assets/images/icon-menu.svg" alt="" />
+      <img class="h-7 lg:h-10" src="assets/images/logo.svg" alt="logo" />
+      <img class="lg:hidden" src="/assets/images/icon-menu.svg" alt="" />
       <nav
-        class="flex/ fixed top-0 bottom-0 right-0 hidden w-[75%] flex-col gap-5 bg-off-white p-6 pt-28 text-lg"
+        class="flex/ fixed top-0 bottom-0 right-0 hidden w-[75%] flex-col gap-5 bg-off-white p-6 pt-28 text-lg lg:relative lg:ml-auto lg:flex lg:w-auto lg:flex-row lg:gap-10 lg:bg-transparent lg:p-0 lg:text-[16px]"
       >
         <img
-          class="absolute right-[20px] top-[20px]"
+          class="absolute right-[20px] top-[20px] lg:hidden"
           src="/assets/images/icon-menu-close.svg"
           alt=""
         />
@@ -37,64 +37,78 @@
       </nav>
     </header>
 
-    <main class="mx-auto max-w-[480px] px-4">
-      <div class="mb-[68px]">
-        <picture class="w-full">
+    <main class="mx-auto max-w-[480px] px-4 lg:max-w-[1140px]">
+      <div class="lg:mb-[68px] lg:grid lg:grid-cols-3 lg:gap-7">
+        <picture class="w-full lg:col-span-2">
           <picture class="w-full">
             <source
-              media="(max-width: 1440px)"
+              media="(max-width: 1024px)"
               srcset="/assets/images/image-web-3-mobile.jpg"
             />
             <img src="/assets/images/image-web-3-desktop.jpg" alt="Web 3" />
           </picture>
         </picture>
-        <h1 class="mt-6 mb-5 text-5xl text-[2.6rem] font-extrabold">
+        <h1
+          class="mt-6 mb-5 text-[2.6rem] font-extrabold lg:col-start-1 lg:col-end-2 lg:m-0 lg:text-6xl lg:text-[3.5rem]"
+        >
           The Bright Future of Web 3.0?
         </h1>
-        <p class="mb-6">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <a
-          class="inline-block bg-soft-red p-3 px-[1.875rem] font-bold uppercase tracking-[4px] text-off-white"
-          href="#"
-          >Read more</a
+        <div class="mb-[68px] lg:col-start-2 lg:col-end-3 lg:mb-0">
+          <p class="mb-6 lg:mb-10">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <a
+            class="inline-block bg-soft-red p-3 px-[1.875rem] font-bold uppercase tracking-[4px] text-off-white"
+            href="#"
+            >Read more</a
+          >
+        </div>
+        <div
+          class="mb-[60px] bg-very-dark-blue/50 p-5 py-7 lg:col-start-3 lg:row-span-2 lg:row-start-1 lg:mb-0 lg:p-6 lg:py-10"
         >
-      </div>
-      <div class="mb-[60px] bg-very-dark-blue p-5 py-7">
-        <h2 class="mb-2 text-[2rem] font-extrabold text-soft-orange">New</h2>
-        <ul>
-          <li class="border-b-[1px] border-b-grayish-blue pt-7 pb-8 text-white">
-            <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
-              Hydrogen VS Electric Cars
-            </h3>
-            <p class="text-grayish-blue">
-              Will hydrogen-fueled cars ever catch up to EVs?
-            </p>
-          </li>
-          <li class="border-b-[1px] border-b-grayish-blue pt-7 pb-8 text-white">
-            <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
-              The Downsides of AI Artistry
-            </h3>
-            <p class="text-grayish-blue">
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </li>
-          <li class="pt-7 text-white">
-            <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
-              Is VC Funding Drying Up?
-            </h3>
-            <p class="text-grayish-blue">
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </li>
-        </ul>
+          <h2
+            class="mb-2 text-[2rem] font-extrabold text-soft-orange lg:text-[2.5rem]"
+          >
+            New
+          </h2>
+          <ul>
+            <li
+              class="border-b-[1px] border-b-grayish-blue pt-7 pb-8 text-white"
+            >
+              <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
+                Hydrogen VS Electric Cars
+              </h3>
+              <p class="text-grayish-blue">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </li>
+            <li
+              class="border-b-[1px] border-b-grayish-blue pt-7 pb-8 text-white"
+            >
+              <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
+                The Downsides of AI Artistry
+              </h3>
+              <p class="text-grayish-blue">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </li>
+            <li class="pt-7 text-white">
+              <h3 class="mb-2 text-xl font-extrabold tracking-[0.3px]">
+                Is VC Funding Drying Up?
+              </h3>
+              <p class="text-grayish-blue">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div>
-        <ol class="flex flex-col gap-8">
+        <ol class="flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-7">
           <li class="flex gap-6">
             <img
               class="w-[100px]"
