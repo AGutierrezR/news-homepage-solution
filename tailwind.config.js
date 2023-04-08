@@ -15,6 +15,40 @@ module.exports = {
             lineHeight: '1.5rem',
           },
         ],
+        xl: [
+          '1.25rem',
+          {
+            lineHeight: '1.75rem',
+            letterSpacing: '0.015em',
+            fontWeight: '800',
+          },
+        ],
+        '5xl': [
+          '2.625rem',
+          {
+            letterSpacing: '0.001em',
+            fontWeight: '800',
+            lineHeight: '1',
+          },
+        ],
+        '6xl': [
+          '3.625rem',
+          {
+            letterSpacing: '0.001em',
+            fontWeight: '800',
+            lineHeight: '1',
+          },
+        ],
+      },
+      letterSpacing: {
+        wide: '0.3px',
+      },
+      padding: {
+        22: '5.5rem',
+      },
+      margin: {
+        15: '3.75rem',
+        17: '4.25rem',
       },
       colors: {
         'soft-orange': 'hsl(35, 77%, 62%)',
