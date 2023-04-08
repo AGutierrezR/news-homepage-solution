@@ -19,12 +19,23 @@
       class="mx-auto flex max-w-[480px] items-center justify-between px-4 py-7 xl:mb-7 xl:max-w-[1140px] xl:pt-[88px]"
     >
       <img class="h-7 xl:h-10" src="assets/images/logo.svg" alt="logo" />
-      <img class="xl:hidden" src="/assets/images/icon-menu.svg" alt="" />
+      <img
+        id="menuOpen"
+        class="xl:hidden"
+        src="/assets/images/icon-menu.svg"
+        alt=""
+      />
+      <div
+        id="navOverlay"
+        class="fixed top-0 left-0 right-0 bottom-0 hidden bg-black/50 xl:hidden"
+      ></div>
       <nav
-        class="flex/ fixed top-0 bottom-0 right-0 hidden w-[75%] flex-col gap-5 bg-off-white p-6 pt-28 text-lg xl:relative xl:ml-auto xl:flex xl:w-auto xl:flex-row xl:gap-10 xl:bg-transparent xl:p-0 xl:text-[16px]"
+        id="pageNav"
+        class="fixed top-0 bottom-0 right-0 hidden w-[75%] flex-col gap-5 bg-off-white p-6 pt-28 text-lg xl:relative xl:ml-auto xl:flex xl:w-auto xl:flex-row xl:gap-10 xl:bg-transparent xl:p-0 xl:text-[16px]"
       >
         <img
           class="absolute right-[20px] top-[20px] xl:hidden"
+          id="menuClose"
           src="/assets/images/icon-menu-close.svg"
           alt=""
         />
@@ -189,5 +200,7 @@
         >Andres Gutierrez</a
       >.
     </footer>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
