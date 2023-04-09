@@ -885,3 +885,24 @@ video {
     font-size: 2.5rem;
   }
 }
+.\[\&\>\*\:nth-child\(odd\)\]\:bg-red-500>*:nth-child(odd){
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+.\[\&\>\*\:nth-child\(even\)\]\:bg-blue-500>*:nth-child(even){
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+.\[\&\>\*\:not\(\:last-child\)\]\:border-b>*:not(:last-child){
+  border-bottom-width: 1px;
+}
+.\[\&\>\*\:not\(\:last-child\)\]\:border-b-grayish-blue>*:not(:last-child){
+  --tw-border-opacity: 1;
+  border-bottom-color: hsl(233 8% 79% / var(--tw-border-opacity));
+}
+.\[\&\>\*\:not\(\:last-child\)\]\:border-b-grayish-blue\/10>*:not(:last-child){
+  border-bottom-color: hsl(233 8% 79% / 0.1);
+}
+.\[\&\>\*\:not\(\:last-child\)\]\:border-b-grayish-blue\/50>*:not(:last-child){
+  border-bottom-color: hsl(233 8% 79% / 0.5);
+}
